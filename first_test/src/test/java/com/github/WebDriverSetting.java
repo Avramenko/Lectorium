@@ -17,7 +17,6 @@ public class WebDriverSetting {
 
     @After
     public void close() {
-        System.out.println("The end");
         driver.quit();
     }
 
