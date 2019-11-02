@@ -33,13 +33,13 @@ public class LoginPage {
     public void enterFirstName(String text){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(fieldForLogin)));
         loginField.clear();
-        loginField.sendKeys();
+        loginField.sendKeys(text);
     }
 
     public void enterPassword (String text){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(fieldForPassword)));
         passwordField.clear();
-        passwordField.sendKeys();
+        passwordField.sendKeys(text);
     }
 
     public void ClickLoginButton(){

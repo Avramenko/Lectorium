@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8235dfaa-7305-45d8-8bed-f63442521c6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/FirstRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/FirstRun.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/WebDriverSetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/WebDriverSetting.class" afterDir="false" />
     </list>
@@ -38,11 +38,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/FirstRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="257">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="34">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+            <state relative-caret-position="-272">
+              <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +89,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="260">
+              <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,10 +135,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/github/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/BlogPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" />
       </list>
     </option>
   </component>
@@ -134,7 +150,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -259,34 +275,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstRun_FirstRun - 2019.10.28 at 20h 38m 19s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 12m 16s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.10.28 at 20h 39m 11s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 42m 47s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 29m 35s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 43m 42s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 30m 41s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 46m 42s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 31m 26s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 48m 36s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 31m 48s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 50m 53s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 33m 35s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 52m 19s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 34m 14s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 54m 23s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 40m 38s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 58m 35s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 42m 45s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 16h 00m 34s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -369,6 +385,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -378,22 +411,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+        <state relative-caret-position="260">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="34">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -402,18 +441,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/FirstRun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        <state relative-caret-position="257">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
