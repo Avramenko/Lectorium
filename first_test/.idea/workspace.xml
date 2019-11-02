@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8235dfaa-7305-45d8-8bed-f63442521c6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/FirstRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/FirstRun.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/WebDriverSetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/WebDriverSetting.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,8 +41,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/FirstRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="57" />
+            <state relative-caret-position="272">
+              <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,25 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-15">
+              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -105,12 +115,15 @@
         <option value="$PROJECT_DIR$/src/test/java/resources/config.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tv/PropertyLoader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/WebDriverSettingExample2.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/BlogPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/BlogPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
       </list>
     </option>
   </component>
@@ -121,7 +134,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -134,7 +147,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,27 +163,34 @@
               <item name="first_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="first_test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="first_test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="first_test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="first_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="first_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,6 +204,10 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.github" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Roman\Documents\Lectorium\first_test\src\main\java" />
+      <recent name="C:\Users\Roman\Documents\Lectorium\first_test\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -236,41 +259,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstRun_FirstRun - 2019.09.25 at 22h 12m 03s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.10.28 at 20h 38m 19s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.09.25 at 22h 12m 27s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.10.28 at 20h 39m 11s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.09.25 at 22h 34m 29s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 29m 35s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.09.25 at 22h 37m 47s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 30m 41s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.09.28 at 08h 12m 39s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 31m 26s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.09.28 at 08h 16m 27s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 31m 48s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.09.28 at 08h 30m 27s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 33m 35s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.09.28 at 08h 48m 17s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 34m 14s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.09.28 at 08h 49m 18s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 40m 38s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.10.14 at 16h 24m 19s.xml">
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 14h 42m 45s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.2685325" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.27609682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -278,7 +302,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.502439" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -295,6 +319,32 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.27609682" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.502439" side_tool="true" weight="0.24962178" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar!/org/openqa/selenium/chrome/ChromeDriver.class">
@@ -319,25 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -345,20 +376,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/FirstRun.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="57" />
+        <state relative-caret-position="-15">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/FirstRun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="272">
+          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
