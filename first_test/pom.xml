@@ -12,6 +12,7 @@
         <chrome.driver.path>/webdrivers/chromedriver.exe</chrome.driver.path>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <browser.name>chrome</browser.name>
+        <environment.http>https://github.com/login</environment.http>
     </properties>
 
     <dependencies>

@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8235dfaa-7305-45d8-8bed-f63442521c6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/PropertyLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/general.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/FirstRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/FirstRun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/github/WebDriverSetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/github/WebDriverSetting.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +31,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+            <state relative-caret-position="238">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/PropertyLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/general.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="42" selection-start-column="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -41,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/FirstRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="73">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="393">
               <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="172">
               <caret line="11" column="23" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
+            <state relative-caret-position="17">
               <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+            <state relative-caret-position="289">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,7 +145,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/resources/config.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tv/PropertyLoader.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/WebDriverSettingExample2.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestBase.java" />
@@ -139,6 +155,9 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/general.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/util/PropertyLoader.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/FirstRun.java" />
       </list>
     </option>
@@ -150,7 +169,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -162,7 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,27 +211,26 @@
               <item name="first_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="first_test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="first_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="first_test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="experimental" />
@@ -275,24 +293,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 12m 16s.xml">
-      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 42m 47s.xml">
-      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 43m 42s.xml">
-      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 46m 42s.xml">
-      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 48m 36s.xml">
-      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 50m 53s.xml">
-      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstRun_FirstRun - 2019.11.02 at 15h 52m 19s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
@@ -305,12 +305,30 @@
     <history-entry file="FirstRun_FirstRun - 2019.11.02 at 16h 00m 34s.xml">
       <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstRun_FirstRun - 2019.11.02 at 16h 04m 10s.xml">
+      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstRun_FirstRun - 2019.11.03 at 22h 00m 04s.xml">
+      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstRun_FirstRun - 2019.11.03 at 22h 00m 33s.xml">
+      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstRun_FirstRun - 2019.11.03 at 22h 01m 20s.xml">
+      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstRun_FirstRun - 2019.11.03 at 22h 02m 45s.xml">
+      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstRun_FirstRun - 2019.11.03 at 22h 03m 44s.xml">
+      <configuration name="FirstRun.FirstRun" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.27609682" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.2806354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -378,24 +396,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        <state relative-caret-position="393">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+        <state relative-caret-position="172">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -411,38 +425,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/WebDriverSetting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BlogPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="17">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/PostLoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/PropertyLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/general.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/FirstRun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="73">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -466,6 +498,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -488,6 +521,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -512,6 +546,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.google.code.findbugs:jsr305:1.3.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
