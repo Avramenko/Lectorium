@@ -22,7 +22,7 @@ public class WebDriverSetting {
 
     @BeforeTest
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Roman\\Documents\\Lectorium\\first_test\\src\\main\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
