@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BlogPage {
-    public static final String blogLogo = "//h1";
+    public static final String BLOG_LOGO = "//h1";
 
 
     WebDriverWait wait;
@@ -18,11 +18,11 @@ public class BlogPage {
         this.wait = wait;
     }
 
-    @FindBy(xpath = blogLogo)
+    @FindBy(xpath = BLOG_LOGO)
     private WebElement blogIdentificationsLogo;
 
     public String checkLogo(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(blogLogo)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BLOG_LOGO)));
         return blogIdentificationsLogo.getText();
     }
 }

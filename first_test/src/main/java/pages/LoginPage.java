@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
-    public static final String  fieldForLogin = ".//input[@id = 'login_field']";
-    public static final String fieldForPassword = ".//input[@id = 'password']";
-    public static final String buttonForsignIn = ".//input[@value = 'Sign in']";
+    public static final String  FIELD_FOR_LOGIN = ".//input[@id = 'login_field']";
+    public static final String FIELD_FOR_PASSWORD = ".//input[@id = 'password']";
+    public static final String BUTTON_FOR_SINGIN = ".//input[@value = 'Sign in']";
 
 
     WebDriverWait wait;
@@ -21,29 +21,29 @@ public class LoginPage {
         this.wait = wait;
     }
 
-    @FindBy(xpath = fieldForLogin)
+    @FindBy(xpath = FIELD_FOR_LOGIN)
     private WebElement loginField;
 
-    @FindBy(xpath = fieldForPassword)
+    @FindBy(xpath = FIELD_FOR_PASSWORD)
     private  WebElement passwordField;
 
-    @FindBy(xpath = buttonForsignIn)
+    @FindBy(xpath = BUTTON_FOR_SINGIN)
     private WebElement signInButton;
 
     public void enterFirstName(String text){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(fieldForLogin)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(FIELD_FOR_LOGIN)));
         loginField.clear();
         loginField.sendKeys(text);
     }
 
     public void enterPassword (String text){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(fieldForPassword)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(FIELD_FOR_PASSWORD)));
         passwordField.clear();
         passwordField.sendKeys(text);
     }
 
     public void ClickLoginButton(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(buttonForsignIn)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BUTTON_FOR_SINGIN)));
         signInButton.click();
     }
 

@@ -10,8 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PostLoginPage {
 
-    public static final String linkToBlog = ".//li[@class = 'mb-1']//a[text() = 'Blog']";
-    public static final String titleFromPage = ".//title[1]";
+    public static final String LINK_TO_BLOG = ".//li[@class = 'mb-1']//a[text() = 'Blog']";
+    public static final String TITLE_FROM_PAGE = ".//title[1]";
+    public static final String LINK_TO_FIRST_REPOSITORY= ".//ul[@class = 'list-style-none']//li[1]";
 
     WebDriverWait wait;
     public PostLoginPage(WebDriver driver, WebDriverWait wait){
@@ -19,20 +20,28 @@ public class PostLoginPage {
         this.wait = wait;
     }
 
-    @FindBy(xpath = linkToBlog)
+    @FindBy(xpath = LINK_TO_BLOG)
     private WebElement blogLink;
 
-    @FindBy(xpath = titleFromPage)
+    @FindBy(xpath = TITLE_FROM_PAGE)
     private WebElement titleOfPage;
 
+    @FindBy(xpath = LINK_TO_FIRST_REPOSITORY)
+    private WebElement firstRepository;
+
     public void ClickBlogLink(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(linkToBlog)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LINK_TO_BLOG)));
         blogLink.click();
     }
 
     public String GetTitleOfPostLoginPage(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(titleFromPage)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(TITLE_FROM_PAGE)));
         return titleOfPage.getText();
+    }
+
+    public void ClickFirstRepositories(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LINK_TO_FIRST_REPOSITORY)));
+        firstRepository.click();
     }
 
 }
