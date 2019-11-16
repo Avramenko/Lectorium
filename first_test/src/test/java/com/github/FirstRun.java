@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import util.PropertyLoader;
 
-public class FirstRun extends WebDriverSetting {
+public class FirstRun extends TestBase {
     String userNameValue = "testQA8120";
     String passwordValue = "TestQwe123rty";
     String expectedLogoBlog = "The GitHub Blog";

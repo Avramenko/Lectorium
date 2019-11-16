@@ -11,6 +11,7 @@ import pages.BlogPage;
 import pages.LoginPage;
 import pages.PostLoginPage;
 import pages.RepositoryPage;
+import util.PropertyLoader;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -27,9 +28,9 @@ class TestBase {
 
     @BeforeSuite()
     public void before(){
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+       File chromeDriver = new File(PropertyLoader.loadProperty("chrome.driver.path"));
         ChromeDriverService service = new ChromeDriverService.Builder()
-                .usingDriverExecutable((File) driver)
+                .usingDriverExecutable(chromeDriver)
                 .usingAnyFreePort()
                 .build();
         ChromeOptions options = new ChromeOptions().addArguments("--windows-size=1366,768");
