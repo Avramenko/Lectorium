@@ -4,12 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.RepositoryPage;
 import util.PropertyLoader;
 
 import java.util.List;
 
 
-public class CountFilesTest extends WebDriverSetting {
+public class CountFilesTest extends TestBase {
 
     String userNameValue = "testQA8120";
     String passwordValue = "TestQwe123rty";
@@ -22,12 +23,17 @@ public class CountFilesTest extends WebDriverSetting {
         loginPage.ClickLoginButton();
         postLoginPage.ClickFirstRepositories();
 
-        List<WebElement> listOfFile = driver.findElements(By.xpath(".//tr[@class ='js-navigation-item']"));
-    //    System.out.println(listOfFile.size());
-    //    System.out.println(repositoryPage.CountFiles());   // Неможу зрозуміти чому повертає "0" якщо робити через пейджбілдер
-        Assert.assertEquals(listOfFile.size(),4);
+        List<WebElement> listOfAllFiles = driver.findElements(By.xpath(RepositoryPage.ALL_FILES_FROM_REPOSITORY));
+        Assert.assertEquals(listOfAllFiles.size(),4);
 
-    // xPath for icon = .//tr[@class ='js-navigation-item']//*[@aria-label = 'directory']
+        List<WebElement> listOfFiles = driver.findElements(By.xpath(RepositoryPage.FILES_FROM_REPOSITORY));
+        Assert.assertEquals(listOfFiles.size(),3);
+
+        List<WebElement> listOfFolders = driver.findElements(By.xpath(RepositoryPage.FOLDERS_FROM_REPOSITORY));
+        Assert.assertEquals(listOfFolders.size(),1);
+
+
+
 
     }
 }
