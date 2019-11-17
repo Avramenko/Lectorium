@@ -10,4 +10,6 @@ public class IdentifyPageHelper extends PageManager {
     public String checkLogoFromBlogPage(){
        return (blogPage.checkLogo());
     }
+
+    public String checkBioText() {return (profilePage.checkToBioText());}
 }

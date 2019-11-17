@@ -14,4 +14,10 @@ public class ClickLinksHelper extends PageManager {
     }
 
     public void clickFirstRepository(){postLoginPage.clickToFirstRepositories();}
+
+    public void clickProfileButton() {postLoginPage.clickToProfileDropdown();}
+
+    public void clickSettingButton() {postLoginPage.clickToSettingsButton();}
+
+    public void clickUpdateButton() {profilePage.clickToUpdateButton();}
 }

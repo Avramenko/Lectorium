@@ -22,6 +22,7 @@ class TestBase {
 
     String expectedLogoBlog = "The GitHub Blog";
     String expectedHttpFromBlog = "https://github.blog/";
+    String expectedTextFromBioField = "test";
 
     @BeforeSuite()
     public void before(){
