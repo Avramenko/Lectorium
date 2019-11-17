@@ -5,22 +5,18 @@ import org.testng.annotations.Test;
 import util.PropertyLoader;
 
 public class FirstRun extends TestBase {
-    String userNameValue = "testQA8120";
-    String passwordValue = "TestQwe123rty";
-    String expectedLogoBlog = "The GitHub Blog";
+
 
 
     @Test
     public void FirstRun() {
         driver.get(PropertyLoader.loadProperty("environment.login"));
-        loginPage.enterFirstName(userNameValue);
-        loginPage.enterPassword(passwordValue);
-        loginPage.ClickLoginButton();
-        postLoginPage.ClickBlogLink();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://github.blog/");
-        Assert.assertEquals(blogPage.checkLogo(),expectedLogoBlog);
-
-
+        app.getUserHelper().enterFirstName();
+        app.getUserHelper().enterPassword();
+        app.getUserHelper().clickLoginButton();
+        app.getClickLinksHelper().clickBlogLink();
+        Assert.assertEquals(driver.getCurrentUrl(), expectedHttpFromBlog);
+        Assert.assertEquals(app.getIdentifyPageHelper().checkLogoFromBlogPage(),expectedLogoBlog);
 
     }
 }
