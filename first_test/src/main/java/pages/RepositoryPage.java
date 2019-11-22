@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 public class RepositoryPage extends Page {
 
     public static final String ALL_FILES_FROM_REPOSITORY = ".//tr[@class ='js-navigation-item']";
@@ -24,27 +26,27 @@ public class RepositoryPage extends Page {
     @FindBy (xpath = FOLDERS_FROM_REPOSITORY)
     private WebElement repositoryFolders;
 
-    public String allFileLocator(){
+    public int getAmountOfAllFileFromRepo(){
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(ALL_FILES_FROM_REPOSITORY)));
-        return (ALL_FILES_FROM_REPOSITORY);
+        List<WebElement> listOfAllFiles = driver.findElements(By.xpath(ALL_FILES_FROM_REPOSITORY));
+        return listOfAllFiles.size();
     }
 
-    public String fileLocator(){
+    public int getAmountOfFileFromRepo(){
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(FILES_FROM_REPOSITORY)));
-        return (FILES_FROM_REPOSITORY);
+        List<WebElement> listOfFiles = driver.findElements(By.xpath(FILES_FROM_REPOSITORY));
+        return listOfFiles.size();
     }
 
-    public String folderLocator(){
+    public int getAmountOfFolderFromRepo(){
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(FOLDERS_FROM_REPOSITORY)));
-        return (FOLDERS_FROM_REPOSITORY);
+        List<WebElement> ListOfFolders = driver.findElements(By.xpath(FOLDERS_FROM_REPOSITORY));
+        return ListOfFolders.size();
     }
 
 
 
-    /*public String GetFilesFromRepository(){
-        List<WebElement> listOfFile = repositoryFile.findElements(By.xpath(FILE_FROM_REPOSITORY));
-        return FILE_FROM_REPOSITORY;
-    }*/
+
 
 
 }

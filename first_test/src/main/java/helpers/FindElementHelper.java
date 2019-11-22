@@ -5,23 +5,19 @@ import pages.PageManager;
 
 public class FindElementHelper extends PageManager {
 
-    public static final String TEXT_TO_BIO_FIELD = "test";
 
     public FindElementHelper(){super(AppManager.getWebDriver());}
 
-    public String  getAllFielesFromRepo() {
-        return (repositoryPage.allFileLocator());
+    public int  amountOfAllFieles() {
+        return repositoryPage.getAmountOfAllFileFromRepo();
     }
 
-    public String  getFielesFromRepo(){
-        return (repositoryPage.fileLocator());
+    public int  amountOfFieles(){
+        return repositoryPage.getAmountOfFileFromRepo();
     }
 
-    public String  getFoldersFromRepo(){
-        return  (repositoryPage.folderLocator());
+    public int  amountOfFolders(){
+        return repositoryPage.getAmountOfFolderFromRepo();
     }
-
-    public void enterBioText() { profilePage.enterToBioField(TEXT_TO_BIO_FIELD);}
-
 
 }

@@ -5,23 +5,30 @@ import managers.AppManager;
 
 public class UserHelper extends PageManager {
 
-    String userNameValue = "testQA8120";
-    String passwordValue = "TestQwe123rty";
+    public static final String userNameValue = "testQA8120";
+    public static final String passwordValue = "TestQwe123rty";
+    public static final String TEXT_TO_BIO_FIELD = "test";
+    public static final String EXISTING_EMAIL = "test.mail8120@gmail.com";
 
     public UserHelper(){
         super(AppManager.getWebDriver());
     }
 
-    public void enterFirstName(){
+    public void loggedInProsess(){
         loginPage.enterToFirstName(userNameValue);
-    }
-
-    public void enterPassword(){
         loginPage.enterToPassword(passwordValue);
+        loginPage.clickToLoginButton();
     }
 
-    public void clickLoginButton(){
-        loginPage.clickToLoginButton();
+    public void changeBioFieldText(){
+        settingsPage.clickToUpdateButton();
+        settingsPage.enterToBioField(TEXT_TO_BIO_FIELD);
+        settingsPage.clickToUpdateButton();
+    }
+
+    public void addExistingEmail(){
+        settingsPage.enterEmailValue(EXISTING_EMAIL);
+        settingsPage.clickToAddButtonForEmail();
     }
 
 }

@@ -23,6 +23,8 @@ class TestBase {
     String expectedLogoBlog = "The GitHub Blog";
     String expectedHttpFromBlog = "https://github.blog/";
     String expectedTextFromBioField = "test";
+    String expectedTitleOfEmailPage = "Emails";
+    String expectedErrorMessageFromEmailField = "Error adding test.mail8120@gmail.com: email is already in use";
 
     @BeforeSuite()
     public void before(){

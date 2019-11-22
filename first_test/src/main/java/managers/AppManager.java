@@ -1,8 +1,8 @@
 package managers;
 
-import helpers.ClickLinksHelper;
+import helpers.NavigateHelper;
 import helpers.FindElementHelper;
-import helpers.IdentifyPageHelper;
+import helpers.IdentifyHelper;
 import helpers.UserHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,9 +15,9 @@ import java.util.concurrent.TimeUnit;
 
 public class AppManager {
 
-    private ClickLinksHelper clickLinksHelper;
+    private NavigateHelper navigateHelper;
     private UserHelper userHelper;
-    private IdentifyPageHelper identifyPageHelper;
+    private IdentifyHelper identifyHelper;
     private FindElementHelper findElementHelper;
 
     private static WebDriver driver;
@@ -32,16 +32,16 @@ public class AppManager {
         driver = new ChromeDriver(service, options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
-        clickLinksHelper = new ClickLinksHelper();
+        navigateHelper = new NavigateHelper();
         userHelper = new UserHelper();
-        identifyPageHelper = new IdentifyPageHelper();
+        identifyHelper = new IdentifyHelper();
         findElementHelper = new FindElementHelper();
     }
 
     public static WebDriver getWebDriver(){return driver;}
 
-    public ClickLinksHelper getClickLinksHelper() {return clickLinksHelper;}
+    public NavigateHelper getNavigateHelper() {return navigateHelper;}
     public UserHelper getUserHelper(){return userHelper;}
-    public IdentifyPageHelper getIdentifyPageHelper(){return identifyPageHelper;}
+    public IdentifyHelper getIdentifyHelper(){return identifyHelper;}
     public FindElementHelper getFindElementHelper() {return findElementHelper;}
 }
