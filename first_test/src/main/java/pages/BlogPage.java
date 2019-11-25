@@ -1,22 +1,14 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BlogPage {
+public class BlogPage extends Page {
     public static final String BLOG_LOGO = "//h1";
 
-
-    WebDriverWait wait;
-    public BlogPage (WebDriver driver, WebDriverWait wait){
-        PageFactory.initElements(driver, this);
-        this.wait = wait;
-    }
+    BlogPage(PageManager pages) { super(pages); }
 
     @FindBy(xpath = BLOG_LOGO)
     private WebElement blogIdentificationsLogo;
