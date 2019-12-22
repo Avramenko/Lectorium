@@ -12,11 +12,9 @@ public class CountFilesTest extends TestBase {
         driver.get(PropertyLoader.loadProperty("environment.login"));
         app.getUserHelper().loggedInProsess();
         app.getNavigateHelper().clickFirstRepository();
-        Assert.assertEquals(app.getFindElementHelper().amountOfAllFieles(),4);
-        Assert.assertEquals(app.getFindElementHelper().amountOfFieles(),3);
-        Assert.assertEquals(app.getFindElementHelper().amountOfFolders(),1);
-
-
+        Assert.assertEquals(app.getDataHelper().amountOfAllFieles(),4);
+        Assert.assertEquals(app.getDataHelper().amountOfFieles(),3);
+        Assert.assertEquals(app.getDataHelper().amountOfFolders(),1);
 
 
     }

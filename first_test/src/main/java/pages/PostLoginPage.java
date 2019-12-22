@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,6 +13,7 @@ public class PostLoginPage extends Page {
     public static final String LINK_TO_FIRST_REPOSITORY= ".//ul[@class = 'list-style-none']//li[1]";
     public static final String LOCATOR_PROFILE_DROPDOWN = ".//summary[@aria-label = 'View profile and more']";
     public static final String LOCATOR_SETTING_BUTTON = ".//a [@href = '/settings/profile']";
+    public static final String LOCATOR_SEARCH_FIELD = "//input[@name='q']";
 
     public PostLoginPage(PageManager pages) {super(pages);}
 
@@ -30,6 +32,9 @@ public class PostLoginPage extends Page {
     @FindBy(xpath = LOCATOR_SETTING_BUTTON)
     private WebElement settingButton;
 
+    @FindBy(xpath = LOCATOR_SEARCH_FIELD)
+    private WebElement searchfield;
+
     public void clickToBlogLink(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LINK_TO_BLOG)));
         blogLink.click();
@@ -46,14 +51,19 @@ public class PostLoginPage extends Page {
     }
 
     public void clickToProfileDropdown(){
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(LOCATOR_PROFILE_DROPDOWN)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATOR_PROFILE_DROPDOWN)));
         profileDropdown.click();
     }
 
     public void clickToSettingsButton(){
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(LOCATOR_SETTING_BUTTON)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATOR_SETTING_BUTTON)));
         settingButton.click();
     }
 
-
+    public void enterToSearchValue(String text){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATOR_SEARCH_FIELD)));
+        searchfield.click();
+        searchfield.sendKeys(text);
+        searchfield.sendKeys(Keys.ENTER);
+    }
 }

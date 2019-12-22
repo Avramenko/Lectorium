@@ -12,7 +12,7 @@ public class UpdateProfileInSettingsTest extends TestBase {
         app.getUserHelper().loggedInProsess();
         app.getNavigateHelper().clickSettingButton();
         app.getUserHelper().changeBioFieldText();
-        Assert.assertEquals(app.getIdentifyHelper().bioFieldValue(), expectedTextFromBioField);
+        Assert.assertEquals(app.getAttributeHelper().bioFieldValue(), expectedTextFromBioField);
 
     }
 }

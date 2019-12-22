@@ -14,7 +14,7 @@ public class OpenBlogPageTest extends TestBase {
         app.getUserHelper().loggedInProsess();
         app.getNavigateHelper().clickBlogLink();
         Assert.assertEquals(driver.getCurrentUrl(), expectedHttpFromBlog);
-        Assert.assertEquals(app.getIdentifyHelper().logoFromBlogPage(),expectedLogoBlog);
+        Assert.assertEquals(app.getAttributeHelper().logoFromBlogPage(),expectedLogoBlog);
 
     }
 }

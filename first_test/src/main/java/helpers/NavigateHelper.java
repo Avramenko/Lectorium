@@ -5,10 +5,11 @@ import pages.PageManager;
 
 public class NavigateHelper extends PageManager {
 
+    public static final String valueForSearch = "Java";
+
     public NavigateHelper(){
         super(AppManager.getWebDriver());
     }
-
 
     public void clickBlogLink(){
         postLoginPage.clickToBlogLink();
@@ -25,6 +26,15 @@ public class NavigateHelper extends PageManager {
 
     public void clickEmailsButton(){
         settingsPage.clickToEmailsButton();
+    }
+
+    public void searchRepo(){
+        postLoginPage.enterToSearchValue(valueForSearch);
+    }
+
+    public void sortByMostStars(){
+        searchResultPage.clickToSortButton();
+        searchResultPage.clickToSortByMostStarsButton();
     }
 
 

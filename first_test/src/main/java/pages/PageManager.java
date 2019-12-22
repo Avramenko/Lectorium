@@ -11,6 +11,7 @@ public class PageManager {
     protected BlogPage blogPage;
     protected RepositoryPage repositoryPage;
     protected SettingsPage settingsPage;
+    protected SearchResultPage searchResultPage;
 
     public PageManager(WebDriver driver){
         this.driver = driver;
@@ -19,6 +20,7 @@ public class PageManager {
         blogPage = initElements(new BlogPage(this));
         repositoryPage = initElements(new RepositoryPage(this));
         settingsPage = initElements(new SettingsPage(this));
+        searchResultPage = initElements(new SearchResultPage(this));
     }
 
     private <T extends Page> T initElements(T page){

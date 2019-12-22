@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class SettingsPage extends Page {
 
     public static final String LOCATOR_BIO_FIELD = ".//textarea";
-    public static final String LOCATOR_UPDATE_PROFILE_BUTTON = ".//button[@class = 'btn btn-primary' ]";
-    public static final String LOCATOR_EMAIL_BUTTON = ".//nav[@class = 'menu position-relative']//a[4]";
+    public static final String LOCATOR_UPDATE_PROFILE_BUTTON = ".//button[@class = 'btn btn-primary']";
+    public static final String LOCATOR_EMAIL_BUTTON = ".//nav[@class = 'menu position-relative']//a[5]";
     public static final String LOCATOR_TITLE_OF_EMAILS_MENU = ".//h2[text() = 'Emails']";
     public static final String LOCATOR_ADD_EMAIL_ADDRESS_FIELD = ".//input[@id = 'email']";
     public static final String LOCATOR_ADD_BUTTON_FOR_EMAIL = ".//button [@type = 'submit' and text() = 'Add']";
