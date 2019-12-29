@@ -23,4 +23,13 @@ public class AttributeHelper extends PageManager {
         return settingsPage.getErrorMessage();
     }
 
+    public int valueFromLanguage(String language){
+        String stringValueOfLangeageName = repositoryPage.getValueFromLanguage(language);
+        stringValueOfLangeageName = stringValueOfLangeageName.replaceAll(",","");
+        int integerValueOfLanguage = Integer.parseInt(stringValueOfLangeageName);
+        System.out.println(integerValueOfLanguage);
+        return integerValueOfLanguage;
+
+    }
+
 }

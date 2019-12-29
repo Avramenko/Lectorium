@@ -13,6 +13,8 @@ public class RepositoryPage extends Page {
     public static final String FOLDERS_FROM_REPOSITORY = ".//tr[@class ='js-navigation-item']//*[@aria-label = 'directory']";
     public static final String FILES_FROM_REPOSITORY = ".//tr[@class ='js-navigation-item']//*[@aria-label = 'file']";
 
+
+
     RepositoryPage(PageManager pages) {
         super(pages);
     }
@@ -41,7 +43,13 @@ public class RepositoryPage extends Page {
     public int getAmountOfFolderFromRepo(){
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(FOLDERS_FROM_REPOSITORY)));
         List<WebElement> ListOfFolders = driver.findElements(By.xpath(FOLDERS_FROM_REPOSITORY));
+
         return ListOfFolders.size();
+    }
+
+    public String getValueFromLanguage(String locationOfLangeagePlusValue){
+        WebElement languageNamePlusValue = driver.findElement(By.xpath("//a [contains(., '"+ locationOfLangeagePlusValue +"')]/ span"));
+        return languageNamePlusValue.getText();
     }
 
 

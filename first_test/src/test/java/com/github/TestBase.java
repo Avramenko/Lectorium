@@ -29,6 +29,8 @@ class TestBase {
     @BeforeSuite()
     public void before(){
         wait = new WebDriverWait(driver, 10);
+
+
    //     blogPage = new BlogPage(driver, wait);
    //     loginPage = new LoginPage(driver, wait);
    //     postLoginPage = new PostLoginPage(driver, wait);

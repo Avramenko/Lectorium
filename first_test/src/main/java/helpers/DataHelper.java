@@ -35,7 +35,7 @@ public class DataHelper extends PageManager {
             if (starsForOneRepo.contains("k") && starsForOneRepo.contains(".") == false){
                 starsForOneRepo = starsForOneRepo.replace("k","");
                 int newValueFromList = Integer.parseInt(starsForOneRepo);
-                newValueFromList = newValueFromList * 100;
+                newValueFromList = newValueFromList * 1000;
                 summ = summ + newValueFromList;
             }
             if (starsForOneRepo.contains(".")){                                // Check if star == exp. 34.231K
