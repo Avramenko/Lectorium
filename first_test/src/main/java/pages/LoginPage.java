@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,6 +24,7 @@ public class LoginPage extends Page {
 
     LoginPage(PageManager pages) { super(pages); }
 
+    @Step("EnterFirstName")
     public void enterToFirstName(String text){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(FIELD_FOR_LOGIN)));
         loginField.clear();

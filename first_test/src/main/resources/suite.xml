@@ -7,10 +7,4 @@
             <class name="com.github.OpenBlogPageTest" />
         </classes>
     </test>
-
-    <test name="Regression1">
-        <classes>
-            <class name="com.github.OpenBlogPageTest"/>
-        </classes>
-    </test>
 </suite>
