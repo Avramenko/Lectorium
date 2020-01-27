@@ -14,6 +14,7 @@ public class PostLoginPage extends Page {
     public static final String LOCATOR_PROFILE_DROPDOWN = ".//summary[@aria-label = 'View profile and more']";
     public static final String LOCATOR_SETTING_BUTTON = ".//a [@href = '/settings/profile']";
     public static final String LOCATOR_SEARCH_FIELD = "//input[@name='q']";
+    public static final String LOCATOR_ABLOUT_LINK = ".//li[@class = 'mb-1']//a[text() = 'About']";
 
     public PostLoginPage(PageManager pages) {super(pages);}
 
@@ -35,9 +36,17 @@ public class PostLoginPage extends Page {
     @FindBy(xpath = LOCATOR_SEARCH_FIELD)
     private WebElement searchfield;
 
+    @FindBy(xpath = LOCATOR_ABLOUT_LINK)
+    private WebElement aboutLink;
+
     public void clickToBlogLink(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LINK_TO_BLOG)));
         blogLink.click();
+    }
+
+    public void clickToAboutLink(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATOR_ABLOUT_LINK)));
+        aboutLink.click();
     }
 
     public String GetTitleOfPostLoginPage(){
@@ -66,4 +75,6 @@ public class PostLoginPage extends Page {
         searchfield.sendKeys(text);
         searchfield.sendKeys(Keys.ENTER);
     }
+
+
 }

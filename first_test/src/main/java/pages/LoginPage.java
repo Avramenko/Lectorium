@@ -25,6 +25,7 @@ public class LoginPage extends Page {
     LoginPage(PageManager pages) { super(pages); }
 
     @Step("EnterFirstName")
+
     public void enterToFirstName(String text){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(FIELD_FOR_LOGIN)));
         loginField.clear();

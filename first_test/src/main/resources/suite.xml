@@ -5,6 +5,16 @@
     <test name="Nopackage" >
         <classes>
             <class name="com.github.OpenBlogPageTest" />
+            <class name="com.github.AddExistingEmailInSettingsTest"/>
+            <class name="com.github.CheckValueFromProgrammLanguageTest"/>
+            <class name="com.github.CountFilesTest"/>
+            <class name="com.github.CountStarsTest"/>
+            <class name="com.github.SortingSearchResultTest"/>
+            <class name="com.github.UpdateProfileInSettingsTest"/>
+            <class name="com.github.TwitterLinkTest"/>
         </classes>
     </test>
+
+
+
 </suite>

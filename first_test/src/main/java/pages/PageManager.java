@@ -12,6 +12,8 @@ public class PageManager {
     protected RepositoryPage repositoryPage;
     protected SettingsPage settingsPage;
     protected SearchResultPage searchResultPage;
+    protected AboutPage aboutPage;
+    protected TwitterPage twitterPage;
 
     public PageManager(WebDriver driver){
         this.driver = driver;
@@ -21,6 +23,8 @@ public class PageManager {
         repositoryPage = initElements(new RepositoryPage(this));
         settingsPage = initElements(new SettingsPage(this));
         searchResultPage = initElements(new SearchResultPage(this));
+        aboutPage = initElements(new AboutPage(this));
+        twitterPage = initElements(new TwitterPage(this));
     }
 
     private <T extends Page> T initElements(T page){

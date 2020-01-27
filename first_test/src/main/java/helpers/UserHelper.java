@@ -1,7 +1,7 @@
 package helpers;
 
-import pages.PageManager;
 import managers.AppManager;
+import pages.PageManager;
 
 public class UserHelper extends PageManager {
 
@@ -30,5 +30,6 @@ public class UserHelper extends PageManager {
         settingsPage.enterEmailValue(EXISTING_EMAIL);
         settingsPage.clickToAddButtonForEmail();
     }
+
 
 }

@@ -1,5 +1,6 @@
 package helpers;
 
+import io.qameta.allure.Step;
 import managers.AppManager;
 import pages.PageManager;
 
@@ -23,6 +24,8 @@ public class AttributeHelper extends PageManager {
         return settingsPage.getErrorMessage();
     }
 
+
+    @Step("Take value from language")
     public int valueFromLanguage(String language){
         String stringValueOfLangeageName = repositoryPage.getValueFromLanguage(language);
         stringValueOfLangeageName = stringValueOfLangeageName.replaceAll(",","");
@@ -31,5 +34,14 @@ public class AttributeHelper extends PageManager {
         return integerValueOfLanguage;
 
     }
+
+    @Step("Take title from Twitter page")
+    public String titleOfAccountTwitter(){
+      return   twitterPage.checkNameOfAccountTwitter();
+    }
+    public boolean twitterConfirmedAccountImg(){
+        return twitterPage.checkConfirmedAccountImg();
+    }
+
 
 }

@@ -10,15 +10,14 @@ public class ReadFromFile {
        writeToFile(number);
     }
     public static int readFromFile() throws Exception {
-        FileReader fileFromRead = new FileReader("D:\\delete 12.01\\first_test\\src\\main\\java\\util\\lectorium1.txt");
+        FileReader fileFromRead = new FileReader("C:\\Users\\Roman\\Documents\\Lectorium\\first_test\\src\\main\\java\\util\\lectorium1.txt");
         Scanner scan = new Scanner(fileFromRead);
         int number = Integer.parseInt(scan.nextLine());
-        System.out.println(number);
         fileFromRead.close();
         return(number);
     }
     public static void writeToFile(int number) throws Exception {
-        FileWriter fileToWrite = new FileWriter("D:\\delete 12.01\\first_test\\src\\main\\java\\util\\lectorium2.txt");
+        FileWriter fileToWrite = new FileWriter("C:\\Users\\Roman\\Documents\\Lectorium\\first_test\\src\\main\\java\\util\\lectorium2.txt");
         number = number * number;
         String numberForWrite= Integer.toString(number);
         fileToWrite.write(numberForWrite);

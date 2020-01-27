@@ -1,5 +1,7 @@
 package helpers;
 
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
 import managers.AppManager;
 import org.openqa.selenium.WebElement;
 import pages.PageManager;
@@ -23,6 +25,8 @@ public class DataHelper extends PageManager {
         return repositoryPage.getAmountOfFolderFromRepo();
     }
 
+    @Step("Take star`s value from first Repo")
+    @Attachment
     public String valueOfFirstStar(){
         List<WebElement> listOfAllStars = searchResultPage.checkValueFromStars();
 

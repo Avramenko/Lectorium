@@ -12,6 +12,7 @@
         <chrome.driver.path>src/main/resources/chromedriver.exe</chrome.driver.path>
         <browser.name>chrome</browser.name>
         <environment.http>https://github.com/login</environment.http>
+        <environment.home.http>https://github.com/</environment.home.http>
         <aspectj.version>1.9.5</aspectj.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -61,6 +62,12 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-java-commons</artifactId>
             <version>2.13.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.0.0</version>
             <scope>compile</scope>
         </dependency>
 
