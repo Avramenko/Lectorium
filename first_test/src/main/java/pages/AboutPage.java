@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +15,8 @@ public class AboutPage extends Page {
     @FindBy(xpath = LINK_TO_TWITTER)
     private WebElement linkToTwitter;
 
-    public void clitToTwitterLink(){
+    @Step("find the twitter link ")
+    public void clickToTwitterLink(){ //TODO +
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LINK_TO_TWITTER)));
         linkToTwitter.click();
     }

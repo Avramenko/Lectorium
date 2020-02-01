@@ -1,22 +1,24 @@
 package com.github;
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import util.AllureListener;
+import util.TestListener;
 import util.PropertyLoader;
 
-@Listeners(AllureListener.class)
+@Listeners(TestListener.class)
 public class CountFilesTest extends TestBase {
-    @Test
 
-    public void CountFies(){
+    @Test
+    @Description("Count files from firs repository")
+    public void countFies(){
         //  driver.get(PropertyLoader.loadProperty("environment.login"));
-        //  app.getUserHelper().loggedInProsess();
+        //  app.getUserHelper().loggedInProcess();
         driver.get(PropertyLoader.loadProperty("environment.home"));
         app.getNavigateHelper().clickFirstRepository();
-        Assert.assertEquals(app.getDataHelper().amountOfAllFieles(),4);
-        Assert.assertEquals(app.getDataHelper().amountOfFieles(),3);
+        Assert.assertEquals(app.getDataHelper().amountOfAllFiles(),4);
+        Assert.assertEquals(app.getDataHelper().amountOfFiles(),3);
         Assert.assertEquals(app.getDataHelper().amountOfFolders(),1);
 
 

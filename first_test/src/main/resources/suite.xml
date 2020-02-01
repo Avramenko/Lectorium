@@ -2,19 +2,59 @@
 
 
 <suite name="Suite1" verbose="1" >
-    <test name="Nopackage" >
+    <test name="GithubTest">
         <classes>
-            <class name="com.github.OpenBlogPageTest" />
-            <class name="com.github.AddExistingEmailInSettingsTest"/>
-            <class name="com.github.CheckValueFromProgrammLanguageTest"/>
-            <class name="com.github.CountFilesTest"/>
-            <class name="com.github.CountStarsTest"/>
-            <class name="com.github.SortingSearchResultTest"/>
-            <class name="com.github.UpdateProfileInSettingsTest"/>
-            <class name="com.github.TwitterLinkTest"/>
+            <class name="com.github.LoginProcessTest">
+                <methods>
+                    <include name="loginProcessTest"/>
+                </methods>
+            </class>
+            <class name="com.github.AddExistingEmailInSettingsTest">
+                <methods>
+                    <include name="addExistingEmailInSettings"/>
+                </methods>
+            </class>
+            <class name="com.github.CheckValueFromProgramLanguageTest">
+                <methods>
+                    <include name="checkValueFromProgramLanguage"/>
+                </methods>
+            </class>
+            <class name="com.github.CountFilesTest">
+                <methods>
+                    <include name="countFies"/>
+                </methods>
+            </class>
+            <class name="com.github.CountStarsTest">
+                <methods>
+                    <include name="countStars"/>
+                </methods>
+            </class>
+            <class name="com.github.OpenBlogPageTest">
+                <methods>
+                    <include name="openBlogPageTest"/>
+                </methods>
+            </class>
+            <class name="com.github.SortingSearchResultTest">
+                <methods>
+                    <include name="sortingSearchResult"/>
+                </methods>
+            </class>
+            <class name="com.github.TwitterLinkTest">
+                <methods>
+                    <include name="openTwitterLinkTest"/>
+                </methods>
+            </class>
+            <class name="com.github.UpdateProfileInSettingsTest">
+                <methods>
+                    <include name="updateProfileSetting"/>
+                </methods>
+            </class>
         </classes>
     </test>
 
 
+
+
+<!--TODO put every method with the same logic to one class and run them as methods from class-->
 
 </suite>

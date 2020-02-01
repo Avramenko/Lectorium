@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,6 +14,7 @@ public class BlogPage extends Page {
     @FindBy(xpath = BLOG_LOGO)
     private WebElement blogIdentificationsLogo;
 
+    @Step("Find logo from blog page")
     public String checkLogo(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BLOG_LOGO)));
         return blogIdentificationsLogo.getText();

@@ -20,16 +20,14 @@ class TestBase {
     String expectedLogoBlog = "The GitHub Blog";
     String expectedHttpFromBlog = "https://github.blog/";
     String expectedHttpFromTwitter = "https://twitter.com/github";
+    String expectedHttpFromPostloginPage = "https://github.com/";
+    String expectedNicknameOfAccount = "testQA8120";
     String expectedTextFromBioField = "test";
     String expectedTitleOfEmailPage = "Emails";
     String expectedErrorMessageFromEmailField = "Error adding test.mail8120@gmail.com: email is already in use";
 
-
     @BeforeSuite()
     public void before(){
-        wait = new WebDriverWait(driver, 10);
-
-
 
     }
 

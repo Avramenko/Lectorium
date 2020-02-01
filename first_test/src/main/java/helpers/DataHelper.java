@@ -1,6 +1,5 @@
 package helpers;
 
-import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import managers.AppManager;
 import org.openqa.selenium.WebElement;
@@ -13,20 +12,22 @@ public class DataHelper extends PageManager {
 
     public DataHelper(){super(AppManager.getWebDriver());}
 
-    public int  amountOfAllFieles() {
+    @Step("Take amount of files and folders")
+    public int amountOfAllFiles() {
         return repositoryPage.getAmountOfAllFileFromRepo();
-    }
+    } //TODO Files +
 
-    public int  amountOfFieles(){
+    @Step("Take amount of files from repository")
+    public int amountOfFiles(){
         return repositoryPage.getAmountOfFileFromRepo();
     }
 
+    @Step("Take amount of folders from repository")
     public int  amountOfFolders(){
         return repositoryPage.getAmountOfFolderFromRepo();
     }
 
     @Step("Take star`s value from first Repo")
-    @Attachment
     public String valueOfFirstStar(){
         List<WebElement> listOfAllStars = searchResultPage.checkValueFromStars();
 
@@ -53,9 +54,7 @@ public class DataHelper extends PageManager {
                 summ = summ + newValueFromList;
             }
         }
-        String summToString  = String.valueOf(summ);
-
-        return summToString;
+        return String.valueOf(summ);
     }
 
 }

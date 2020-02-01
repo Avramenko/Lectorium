@@ -1,6 +1,5 @@
 package helpers;
 
-import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import managers.AppManager;
 import pages.PageManager;
@@ -26,7 +25,7 @@ public class NavigateHelper extends PageManager {
     }
 
     public void clickToTwitterLink(){
-        aboutPage.clitToTwitterLink();
+        aboutPage.clickToTwitterLink();
     }
 
     @Step("Navigate to Settings page")
@@ -35,6 +34,7 @@ public class NavigateHelper extends PageManager {
         postLoginPage.clickToSettingsButton();
     }
 
+    @Step("Click to email button")
     public void clickEmailsButton(){
         settingsPage.clickToEmailsButton();
     }
@@ -42,10 +42,10 @@ public class NavigateHelper extends PageManager {
     @Step("Enter to search value")
     public void searchRepo(){
         postLoginPage.enterToSearchValue(valueForSearch);
+        postLoginPage.clickToFirstValueFromSearchResult();
     }
 
     @Step("Sort by most Stars")
-    @Attachment
     public void sortByMostStars(){
         searchResultPage.clickToSortButton();
         searchResultPage.clickToSortByMostStarsButton();

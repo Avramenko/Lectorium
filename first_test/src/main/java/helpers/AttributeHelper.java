@@ -6,9 +6,11 @@ import pages.PageManager;
 
 public class AttributeHelper extends PageManager {
 
-    public AttributeHelper() {super(AppManager.getWebDriver());}
+    public AttributeHelper() {
+        super(AppManager.getWebDriver());
+    }
 
-    public String logoFromBlogPage(){
+    public String logoFromBlogPage() {
         return blogPage.checkLogo();
     }
 
@@ -16,19 +18,19 @@ public class AttributeHelper extends PageManager {
         return settingsPage.getTextFromBioField();
     }
 
-    public String titleOfEmailsMenu(){
+    public String titleOfEmailsMenu() {
         return settingsPage.getEmailsMenuTitle();
     }
 
-    public String errorMessage(){
+    public String errorMessage() {
         return settingsPage.getErrorMessage();
     }
 
 
     @Step("Take value from language")
-    public int valueFromLanguage(String language){
+    public int valueFromLanguage(String language) {
         String stringValueOfLangeageName = repositoryPage.getValueFromLanguage(language);
-        stringValueOfLangeageName = stringValueOfLangeageName.replaceAll(",","");
+        stringValueOfLangeageName = stringValueOfLangeageName.replaceAll(",", "");
         int integerValueOfLanguage = Integer.parseInt(stringValueOfLangeageName);
         System.out.println(integerValueOfLanguage);
         return integerValueOfLanguage;
@@ -36,10 +38,12 @@ public class AttributeHelper extends PageManager {
     }
 
     @Step("Take title from Twitter page")
-    public String titleOfAccountTwitter(){
-      return   twitterPage.checkNameOfAccountTwitter();
+    public String titleOfAccountTwitter() {
+        return twitterPage.checkNameOfAccountTwitter();
     }
-    public boolean twitterConfirmedAccountImg(){
+
+    @Step("Take confirmed account img")
+    public boolean twitterConfirmedAccountImg() {
         return twitterPage.checkConfirmedAccountImg();
     }
 

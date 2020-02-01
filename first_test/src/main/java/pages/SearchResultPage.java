@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,19 +25,21 @@ public class SearchResultPage extends Page {
     @FindBy (xpath = STARS_OF_REPO_LOCATOR)
     private WebElement starsOfRepo;
 
+    @Step("Find sort button")
     public void clickToSortButton(){
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(SORT_BUTTON_LOCATOR)));
         sortButton.click();
     }
 
+    @Step("Find Sort by most stars option")
     public void clickToSortByMostStarsButton(){
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(SORT_BY_MOST_STARS_BUTTON_LOCATOR)));
         sortByMostStarsButton.click();
     }
 
-   public List<WebElement> checkValueFromStars(){
+    @Step("Find value from stars")
+    public List<WebElement> checkValueFromStars(){
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STARS_OF_REPO_LOCATOR)));
-       List<WebElement> listOfAllStars = driver.findElements(By.xpath(STARS_OF_REPO_LOCATOR));
-       return listOfAllStars;
+       return driver.findElements(By.xpath(STARS_OF_REPO_LOCATOR));
     }
 }

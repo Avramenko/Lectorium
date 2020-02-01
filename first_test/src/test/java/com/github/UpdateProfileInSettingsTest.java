@@ -1,20 +1,21 @@
 package com.github;
 
 
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import util.AllureListener;
+import util.TestListener;
 import util.PropertyLoader;
 
-@Listeners(AllureListener.class)
+@Listeners(TestListener.class)
 public class UpdateProfileInSettingsTest extends TestBase {
 
     @Test
-
-    public void UpdateProfileSetting(){
+    @Description("Update bio value in the setting page")
+    public void updateProfileSetting(){
         //  driver.get(PropertyLoader.loadProperty("environment.login"));
-        //  app.getUserHelper().loggedInProsess();
+        //  app.getUserHelper().loggedInProcess();
         driver.get(PropertyLoader.loadProperty("environment.home"));
         app.getNavigateHelper().clickSettingButton();
         app.getUserHelper().changeBioFieldText();

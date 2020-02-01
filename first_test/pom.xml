@@ -118,3 +118,4 @@
         </plugins>
     </build>
 </project>
+<!--TODO create a profile to run tests in headless mode-->
