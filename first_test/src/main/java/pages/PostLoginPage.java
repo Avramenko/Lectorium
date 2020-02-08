@@ -14,7 +14,7 @@ public class PostLoginPage extends Page {
     public static final String LOCATOR_PROFILE_DROPDOWN = ".//summary[@aria-label = 'View profile and more']";
     public static final String LOCATOR_SETTING_BUTTON = ".//a [@href = '/settings/profile']";
     public static final String LOCATOR_SEARCH_FIELD = "//input[@name='q']";
-    public static final String LOCATOR_ABOUT_LINK = ".//li[@class = 'mb-1']//a[text() = 'About']"; //TODO +
+    public static final String LOCATOR_ABOUT_LINK = ".//li[@class = 'mb-1']//a[text() = 'About']";
     public static final String LOCATOR_FIRST_VALUE_FROM_SEARCH_RESULT_DROPDOWN = "(id('jump-to-results')/li)[2]";
 
     public PostLoginPage(PageManager pages) {super(pages);}

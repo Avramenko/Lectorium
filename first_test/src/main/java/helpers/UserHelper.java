@@ -15,7 +15,7 @@ public class UserHelper extends PageManager {
     }
 
     @Step("Fill the username, password fields and click the login button")
-    public void loggedInProcess(){ //TODO process +
+    public void loggedInProcess(){
         loginPage.enterToFirstName(userNameValue);
         loginPage.enterToPassword(passwordValue);
         loginPage.clickToLoginButton();
@@ -24,7 +24,7 @@ public class UserHelper extends PageManager {
     @Step("Change the bio value")
     public void changeBioFieldText(){
         settingsPage.clickToUpdateButton();
-        settingsPage.enterToBioField("test"); //TODO remove consts +
+        settingsPage.enterToBioField("test");
         settingsPage.clickToUpdateButton();
     }
 

@@ -10,7 +10,7 @@ public class LoginPage extends Page {
 
     public static final String  FIELD_FOR_LOGIN = ".//input[@id = 'login_field']";
     public static final String FIELD_FOR_PASSWORD = ".//input[@id = 'password']";
-    public static final String BUTTON_FOR_SIGN_IN = ".//input[@value = 'Sign in']"; //TODO+
+    public static final String BUTTON_FOR_SIGN_IN = ".//input[@value = 'Sign in']";
 
 
     @FindBy(xpath = FIELD_FOR_LOGIN)

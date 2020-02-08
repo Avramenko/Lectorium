@@ -15,7 +15,7 @@ public class DataHelper extends PageManager {
     @Step("Take amount of files and folders")
     public int amountOfAllFiles() {
         return repositoryPage.getAmountOfAllFileFromRepo();
-    } //TODO Files +
+    }
 
     @Step("Take amount of files from repository")
     public int amountOfFiles(){

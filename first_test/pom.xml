@@ -2,12 +2,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>first_test</groupId>
     <artifactId>first_test</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <profiles>
+        <profile>
+            <id>noGuiMode</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <headless.value>true</headless.value>
+            </properties>
+        </profile>
+        <profile>
+            <id>guiMode</id>
+            <properties>
+                <headless.value>false</headless.value>
+            </properties>
+        </profile>
+    </profiles>
     <properties>
         <chrome.driver.path>src/main/resources/chromedriver.exe</chrome.driver.path>
         <browser.name>chrome</browser.name>
@@ -17,15 +34,12 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-
     <dependencies>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
             <version>3.141.59</version>
         </dependency>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
@@ -58,8 +72,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
-
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
@@ -84,7 +96,6 @@
             <version>7.0.0</version>
             <scope>compile</scope>
         </dependency>
-
     </dependencies>
     <build>
         <resources>
@@ -93,11 +104,11 @@
                 <includes>
                     <include>general.properties</include>
                     <include>allure.properties</include>
+                    <include>no_gui.properties</include>
                 </includes>
                 <filtering>true</filtering>
             </resource>
         </resources>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -116,11 +127,10 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                            <suiteXmlFile>src\main\resources\suite.xml</suiteXmlFile>
+                        <suiteXmlFile>src\main\resources\suite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
@@ -132,4 +142,4 @@
         </plugins>
     </build>
 </project>
-<!--TODO create a profile to run tests in headless mode-->
+        <!--TODO create a profile to run tests in headless mode-->

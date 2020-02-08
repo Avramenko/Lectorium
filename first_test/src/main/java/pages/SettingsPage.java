@@ -66,7 +66,7 @@ public class SettingsPage extends Page {
     @Step("Find emails menu title")
     public String getEmailsMenuTitle(){
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(LOCATOR_TITLE_OF_EMAILS_MENU)));
-        return titleOfEmailsMenu.getText(); //TODO check for helpers(remove every getText, size etc. methods to helpers)
+        return titleOfEmailsMenu.getText(); //check for helpers(remove every getText, size etc. methods to helpers)
     }
 
     @Step("Find email address field")

@@ -15,7 +15,7 @@ public class LoginProcessTest extends TestBase {
     public void loginProcessTest(){
         driver.get(PropertyLoader.loadProperty("environment.login"));
         app.getUserHelper().loggedInProcess();
-        Assert.assertEquals(driver.getCurrentUrl(), expectedHttpFromPostloginPage);
+        Assert.assertEquals(driver.getCurrentUrl(), expectedHttpFromPostLoginPage);
         Assert.assertEquals(app.getUserHelper().nicknameOfAccount(), expectedNicknameOfAccount);
     }
 }

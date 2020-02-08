@@ -29,11 +29,9 @@ public class AttributeHelper extends PageManager {
 
     @Step("Take value from language")
     public int valueFromLanguage(String language) {
-        String stringValueOfLangeageName = repositoryPage.getValueFromLanguage(language);
-        stringValueOfLangeageName = stringValueOfLangeageName.replaceAll(",", "");
-        int integerValueOfLanguage = Integer.parseInt(stringValueOfLangeageName);
-        System.out.println(integerValueOfLanguage);
-        return integerValueOfLanguage;
+        String stringValueOfLanguageName = repositoryPage.getValueFromLanguage(language);
+        stringValueOfLanguageName = stringValueOfLanguageName.replaceAll(",", "");
+        return Integer.parseInt(stringValueOfLanguageName);
 
     }
 

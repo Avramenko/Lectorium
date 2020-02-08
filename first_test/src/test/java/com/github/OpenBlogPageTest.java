@@ -13,7 +13,7 @@ public class OpenBlogPageTest extends TestBase {
     @Test
     @Description("Open blog page")
     public void openBlogPageTest() {
-        driver.get(PropertyLoader.loadProperty("environment.home"));
+        driver.get(PropertyLoader.loadProperty("environment.home.http"));
         app.getNavigateHelper().clickBlogLink();
         Assert.assertEquals(driver.getCurrentUrl(), expectedHttpFromBlog);
         Assert.assertEquals(app.getAttributeHelper().logoFromBlogPage(),expectedLogoBlog);

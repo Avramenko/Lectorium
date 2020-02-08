@@ -16,7 +16,7 @@ public class AboutPage extends Page {
     private WebElement linkToTwitter;
 
     @Step("find the twitter link ")
-    public void clickToTwitterLink(){ //TODO +
+    public void clickToTwitterLink(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LINK_TO_TWITTER)));
         linkToTwitter.click();
     }

@@ -29,8 +29,8 @@ public class AppManager {
                 .usingAnyFreePort()
                 .build();
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true);
-        options.addArguments("--windows-size=1366,768");
+        options.setHeadless(Boolean.parseBoolean(PropertyLoader.loadProperty("headless.value")));
+        options.addArguments("--window-size=1366,768");
         driver = new ChromeDriver(service, options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);

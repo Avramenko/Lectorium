@@ -53,7 +53,7 @@ public class RepositoryPage extends Page {
     @Step("Find value from language")
     public String getValueFromLanguage(String locationOfLanguagePlusValue){
         WebElement languageNamePlusValue = driver.findElement(By.xpath("//a [contains(., '"+ locationOfLanguagePlusValue +"')]/ span"));
-        return languageNamePlusValue.getText();  //TODO inline
+        return languageNamePlusValue.getText();
     }
 
 
