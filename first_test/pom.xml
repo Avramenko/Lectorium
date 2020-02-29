@@ -11,15 +11,15 @@
     <profiles>
         <profile>
             <id>noGuiMode</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <properties>
                 <headless.value>true</headless.value>
             </properties>
         </profile>
         <profile>
             <id>guiMode</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <properties>
                 <headless.value>false</headless.value>
             </properties>
