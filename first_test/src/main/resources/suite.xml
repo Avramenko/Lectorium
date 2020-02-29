@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Suite1" verbose="1" >
+    <test name="GithubTest">
+        <classes>
+            <class name="com.github.LoginProcessTest">
+                <methods>
+                    <include name="loginProcessTest"/>
+                </methods>
+            </class>
+            <class name="com.github.AddExistingEmailInSettingsTest">
+                <methods>
+                    <include name="addExistingEmailInSettings"/>
+                </methods>
+            </class>
+            <class name="com.github.CheckValueFromProgramLanguageTest">
+                <methods>
+                    <include name="checkValueFromProgramLanguage"/>
+                </methods>
+            </class>
+            <class name="com.github.CountFilesTest">
+                <methods>
+                    <include name="countFies"/>
+                </methods>
+            </class>
+            <class name="com.github.CountStarsTest">
+                <methods>
+                    <include name="countStars"/>
+                </methods>
+            </class>
+            <class name="com.github.OpenBlogPageTest">
+                <methods>
+                    <include name="openBlogPageTest"/>
+                </methods>
+            </class>
+            <class name="com.github.SortingSearchResultTest">
+                <methods>
+                    <include name="sortingSearchResult"/>
+                </methods>
+            </class>
+            <class name="com.github.TwitterLinkTest">
+                <methods>
+                    <include name="openTwitterLinkTest"/>
+                </methods>
+            </class>
+            <class name="com.github.UpdateProfileInSettingsTest">
+                <methods>
+                    <include name="updateProfileSetting"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+<!--TODO put every method with the same logic to one class and run them as methods from class-->
+
+</suite>
