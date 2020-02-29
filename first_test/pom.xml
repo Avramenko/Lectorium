@@ -11,15 +11,24 @@
     <profiles>
         <profile>
             <id>noGuiMode</id>
+<<<<<<< HEAD
+=======
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+>>>>>>> 7e093461e17b49be8ef2122a5d3be3647d74807c
             <properties>
                 <headless.value>true</headless.value>
             </properties>
         </profile>
         <profile>
             <id>guiMode</id>
+<<<<<<< HEAD
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
+=======
+>>>>>>> 7e093461e17b49be8ef2122a5d3be3647d74807c
             <properties>
                 <headless.value>false</headless.value>
             </properties>
