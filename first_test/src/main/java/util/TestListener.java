@@ -9,7 +9,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestListener implements ITestListener { //TODO rename
+public class TestListener implements ITestListener {
     @Attachment(value = "Page screenshot", type = "image/png")
     public byte[] saveScreenshot(byte[] screenShot) {
         return screenShot;
